@@ -1,0 +1,38 @@
+@import '../../constants.scss';
+
+@mixin _after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 14px;
+}
+
+.address {
+    display: flex;
+    @include _font(Merriweather, 14px, 21px, normal, 400);
+    flex-grow: 1;
+    justify-content: flex-end;
+
+    &__phone {
+        position: relative;
+        margin: 0 51px 0 0;
+        padding: 0 0 0 24px;
+
+        &::after {
+            content: url('../../docs/images/phone.png');
+            @include _after();
+        }
+    }
+
+    &__location {
+        position: relative;
+        padding: 0 0 0 25px;
+
+        &::after {
+            content: url('../../docs/images/location.png');
+            @include _after();
+            left: 3px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../constants.scss';
+
+.nav {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        padding: 0 48px 0 0;
+
+        &:last-of-type {
+            padding: 0;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        @include _font(Merriweather, 14px, 21px, normal, 400);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

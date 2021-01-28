@@ -1,0 +1,32 @@
+@import '../../constants.scss';
+
+.search {
+    height: $buttonHeight;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+
+    &__input {
+        margin: 0;
+        padding: 0 16px;
+        width: 294px;
+        height: 100%;
+        @include _font(Merriweather, 14px, 21px, normal, 400, #9f9f9f);
+        border: 1px solid #e1e1e1;
+        box-sizing: border-box;
+        outline: none;
+
+        &:focus,
+        &:active {
+            border-color: #b5b5b5;
+            outline: none;
+            color: #343030;
+        }
+    }
+
+    &__button {
+        width: 122px;
+        @include _button();
+        @include _font(Merriweather, 14px, 21px, normal, 700, #fff);
+    }
+}

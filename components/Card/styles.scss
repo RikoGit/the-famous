@@ -1,0 +1,84 @@
+@import '../../constants.scss';
+
+$cardWidth: 280px;
+$photoHeight: 160px;
+$cardPadding: 23px;
+
+.card {
+    position: relative;
+    margin: 0;
+    width: $cardWidth;
+    height: 328px;
+    border: 1px solid #e1e1e1;
+    box-sizing: border-box;
+
+    &_type_sold {
+        opacity: 0.5;
+    }
+
+    &__photo {
+        margin: 0 0 19px 0;
+        position: relative;
+        height: $photoHeight;
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    &__img {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: $cardWidth;
+        max-height: $photoHeight;
+    }
+
+    &__name,
+    &__author {
+        padding: 0 $cardPadding;
+        @include _font(Merriweather, 18px, 27px, normal, 400);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__solidtext {
+        padding: 33px $cardPadding 0 $cardPadding;
+        @include _font(Merriweather, 16px, 24px, normal, 700);
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: $cardPadding;
+        left: $cardPadding;
+        right: $cardPadding;
+        display: flex;
+        height: $buttonHeight;
+        justify-content: space-between;
+    }
+
+    &__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__oldprice {
+        @include _font(Merriweather, 14px, 21px, normal, 300, #a0a0a0);
+        text-decoration: line-through;
+    }
+
+    &__validprice {
+        @include _font(Merriweather, 16px, 24px, normal, 700);
+    }
+
+    &__button {
+        margin: 0;
+        padding: 0;
+        width: 112px;
+        @include _button();
+        @include _font(Merriweather, 14px, 21px, normal, 700, #f4f6f9);
+    }
+}

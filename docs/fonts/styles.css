@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("./Merriweather/bold.eot");
+  src: local("Merriweather"),
+    url("./Merriweather/bold.eot?#iefix") format("embedded-opentype"),
+    url("./Merriweather/bold.woff") format("woff"),
+    url("./Merriweather/bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("./Merriweather/regular.eot");
+  src: local("Merriweather"),
+    url("./Merriweather/regular.eot?#iefix") format("embedded-opentype"),
+    url("./Merriweather/regular.woff") format("woff"),
+    url("./Merriweather/regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url("./Merriweather/light.eot");
+  src: local("Merriweather"),
+    url("./Merriweather/light.eot?#iefix") format("embedded-opentype"),
+    url("./Merriweather/light.woff") format("woff"),
+    url("./Merriweather/light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,15 @@
+<template>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Доставка</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Оплата</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">О галерее</a></li>
+        </ul>
+    </nav>
+</template>
+
+<style lang="scss" scoped>
+@import './styles.scss';
+</style>
