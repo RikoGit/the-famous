@@ -2,7 +2,7 @@
     <div class="content">
         <header class="header">
             <div class="header__content">
-                <Logo />
+                <Logo :mode="'light'" />
                 <Nav />
                 <Search />
             </div>
