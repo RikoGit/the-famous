@@ -8,44 +8,44 @@ $buttonColor: #f4f6f9;
 $buttonHeight: 48px;
 
 @mixin _font($family, $size, $lineHeight, $style, $weight, $color: $textColor) {
-  font-family: $family;
-  font-size: $size;
-  font-style: $style;
-  font-weight: $weight;
-  line-height: $lineHeight;
-  color: $color;
+    font-family: $family;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    color: $color;
 }
 
 @mixin _button() {
-  height: $buttonHeight;
-  background: $buttonBackground;
-  color: $buttonColor;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  outline: none;
+    height: $buttonHeight;
+    background-color: $buttonBackground;
+    color: $buttonColor;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
 
-  &:hover {
-    background: $buttonHoverBackground;
-  }
-
-  &_type_incart {
-    width: 118px;
-    position: relative;
-    background: $buttonActiveBackground;
-    padding-left: 21px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 13.33px;
-      height: 6px;
-      top: 17px;
-      left: 10px;
-      border-bottom: 2px solid $buttonColor;
-      border-left: 2px solid $buttonColor;
-      transform: rotate(-47deg);
-      background: transparent;
+    &:hover {
+        background-color: $buttonHoverBackground;
     }
-  }
+
+    &_type_incart {
+        width: 118px;
+        position: relative;
+        background-color: $buttonActiveBackground;
+        padding-left: 21px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 13.33px;
+            height: 6px;
+            top: 17px;
+            left: 10px;
+            border-bottom: 2px solid $buttonColor;
+            border-left: 2px solid $buttonColor;
+            transform: rotate(-47deg);
+            background: transparent;
+        }
+    }
 }

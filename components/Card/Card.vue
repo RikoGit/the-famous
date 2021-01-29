@@ -21,11 +21,14 @@
                 <button
                     type="button"
                     class="card__button"
-                    :class="{ card__button_type_incart: card.isInCart }"
+                    :class="{
+                        card__button_type_incart: card.isInCart,
+                        card__button_type_loading: card.isLoading,
+                    }"
                     :title="card.isInCart ? 'Удалить из корзины' : 'Добавить в корзину'"
                     @click="$emit('click', card.id)"
                 >
-                    {{ card.isInCart ? 'В корзине' : 'Купить' }}
+                    {{ card.isInCart ? 'В корзине' : card.isLoading ? '' : 'Купить' }}
                 </button>
             </div>
         </div>

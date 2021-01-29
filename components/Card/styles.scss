@@ -80,5 +80,11 @@ $cardPadding: 23px;
         width: 112px;
         @include _button();
         @include _font(Merriweather, 14px, 21px, normal, 700, #f4f6f9);
+
+        &_type_loading {
+            background-image: url('../../docs/images/preloader.gif');
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
     }
 }
