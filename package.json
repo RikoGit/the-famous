@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/RikoGit/the-famous#readme",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "vue": "^2.6.12"
   },
   "devDependencies": {

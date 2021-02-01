@@ -7,7 +7,7 @@ const rootDir = join(__dirname, '..');
 const staticDir = join(rootDir, '.');
 
 module.exports = {
-    entry: './index.js',
+    entry: ['@babel/polyfill', './index.js'],
     mode: isDev ? 'development' : 'production',
     module: {
         rules: [
