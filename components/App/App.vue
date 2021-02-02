@@ -1,7 +1,6 @@
 <template>
     <div class="content">
-        TEST
-        <!--<header class="header">
+        <header class="header">
             <div class="header__content">
                 <Logo :mode="'light'" />
                 <Nav />
@@ -22,29 +21,28 @@
                 <Nav />
                 <Address />
             </div>
-        </footer>-->
+        </footer>
     </div>
 </template>
 
-<!-- 
 <script>
-//import Address from '../Address/Address.vue';
-//import Logo from '../Logo/Logo.vue';
-//import Nav from '../Nav/Nav.vue';
-//import Search from '../Search/Search.vue';
-//import Card from '../Card/Card.vue';
-//import { POSTS_URL } from '../../constants.js';
+import Address from '../Address/Address.vue';
+import Logo from '../Logo/Logo.vue';
+import Nav from '../Nav/Nav.vue';
+import Search from '../Search/Search.vue';
+import Card from '../Card/Card.vue';
+import { POSTS_URL } from '../../constants.js';
 
 export default {
-    /*    props: {
+    props: {
         card: Object,
     },
     components: {
-        //Address,
-        //Card,
-        //Logo,
-        //Nav,
-        //Search,
+        Address,
+        Card,
+        Logo,
+        Nav,
+        Search,
     },
     data() {
         return {
@@ -99,8 +97,8 @@ export default {
                 },
             ],
         };
-    },*/
-    /*methods: {
+    },
+    methods: {
         getCardsForLocalStorage() {
             const localStorageCards = this.cards.map((card) => ({
                 id: card.id,
@@ -143,10 +141,10 @@ export default {
                     )[0].isInCart),
             );
         }
-    },*/
+    },
 };
-</script> -->
+</script>
 
-<!-- <style lang="scss" scoped>
+<style lang="scss" scoped>
 @import './styles.scss';
-</style> -->
+</style>
