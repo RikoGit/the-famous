@@ -3,7 +3,8 @@
         [
             "@vue/app",
             {
-                "useBuiltIns": "entry"
+                "useBuiltIns": "entry",
+                "polyfills": ["es.promise", "es.symbol"]
             }
         ]
     ]
