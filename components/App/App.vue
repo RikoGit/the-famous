@@ -1,10 +1,11 @@
 <template>
     <div class="content">
-        <header class="header">
+        TEST
+        <!--<header class="header">
             <div class="header__content">
-                <!--<Logo :mode="'light'" />
+                <Logo :mode="'light'" />
                 <Nav />
-                <Search />-->
+                <Search />
             </div>
         </header>
         <main class="main">
@@ -12,19 +13,20 @@
                 <h1 class="main__title">Картины эпохи Возрождения</h1>
             </header>
             <ul class="cards">
-                <!--<Card v-for="card in cards" :card="card" :key="card.id" @click="setInCart" />-->
+                <Card v-for="card in cards" :card="card" :key="card.id" @click="setInCart" />
             </ul>
         </main>
         <footer class="footer">
             <div class="footer__content">
-                <!--<Logo />
+                <Logo />
                 <Nav />
-                <Address />-->
+                <Address />
             </div>
-        </footer>
+        </footer>-->
     </div>
 </template>
 
+<!-- 
 <script>
 //import Address from '../Address/Address.vue';
 //import Logo from '../Logo/Logo.vue';
@@ -34,7 +36,7 @@
 //import { POSTS_URL } from '../../constants.js';
 
 export default {
-    props: {
+    /*    props: {
         card: Object,
     },
     components: {
@@ -97,7 +99,7 @@ export default {
                 },
             ],
         };
-    },
+    },*/
     /*methods: {
         getCardsForLocalStorage() {
             const localStorageCards = this.cards.map((card) => ({
@@ -143,8 +145,8 @@ export default {
         }
     },*/
 };
-</script>
+</script> -->
 
-<style lang="scss" scoped>
+<!-- <style lang="scss" scoped>
 @import './styles.scss';
-</style>
+</style> -->
